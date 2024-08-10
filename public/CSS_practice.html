@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Practice</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #D6BD98;
         }
+        
         .css-practice-heading {
-            font-weight: 100;
-            font-style: italic;
+            font-weight: 200;
             text-align: center;
             color: white;
             background-color: #1A3636;
@@ -25,7 +29,7 @@
 
         .css-topic-list{
             display: flex;
-            padding: 50px 100px;
+            padding: 10px 100px;
         }
 
         .css-topic-list ol {
@@ -48,7 +52,35 @@
     </style>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="brand-title">Web Development</div>
+        <input type="checkbox" id="toggle-checkbox">
+        <label for="toggle-checkbox" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
 
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Front Pages</a>
+                    <div class="dropdown-content">
+                        <a href="#">Page 1</a>
+                        <a href="#">Page 2</a>
+                        <a href="#">Page 3</a>
+                        <a href="#">Page 4</a>
+                    </div>
+                </li>
+                <li><a href="#">CSS Practice</a></li>
+                <li><a href="#">My Portfolio</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </div>
+    </nav>
+    
     <!-- CSS Practice -->
     <div>
         <h1 class="css-practice-heading">CSS Practice</h1>
@@ -59,7 +91,7 @@
      <div class="css-topic-list">
         <ol>
             <!-- Topic 1 -->
-            <li><a href="#" >Color In Spanish</a></li>
+            <li><a href="./CSS/CSS_position.html" >CSS position</a></li>
             <!-- Topic 2 -->
             <li><a href="#">Topic</a></li>
             <!-- Topic 3 -->
