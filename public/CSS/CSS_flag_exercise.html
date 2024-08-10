@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WebDevelopment Practice</title>
+        <link rel="stylesheet" href="../../assets/css/style.css">
+
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mooli&family=Platypi:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mooli&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <style>
+            .exercise{
+                padding: 30px 100px;
+            }
+            .exercise-title{
+                padding: 20px 0;
+                text-align: center;
+                align-items: center;
+
+            }
+            .flag {
+                height: 600px;
+                width: 900px;
+                background-color: red;
+                position: relative;
+                color: white;
+                position: relative;
+            }
+            .flag > div {
+                position: absolute;
+                width: 100%;
+                height: 300px;
+                background-color: blue;
+                top:150px
+            }
+            .flag > div > div {
+                position: relative;
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                background-color: white;
+                top: 50px;
+                left: 350px;
+            }
+
+            .flag p{
+                margin: 0;
+                font-size: 3rem;
+                text-align: center;
+            }
+
+            .flag  div  div  p {
+                color: black;
+            }
+
+            .flag-2 {
+                height: 600px;
+                width: 900px;
+                position: relative;
+                border: 1px solid #333;
+            }
+            .Top {
+                background-color: #FF671F;
+                height: 200px;
+            }
+            .middle {
+                height: 200px;
+                position: relative;
+            }
+            .bottom {
+                background-color: #046A38;
+                height: 200px;
+            }
+
+            .flag-2 > div > img {
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                left: 350px;
+                position: absolute;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="brand-title">Web Development</div>
+            <input type="checkbox" id="toggle-checkbox">
+            <label for="toggle-checkbox" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Front Pages</a>
+                        <div class="dropdown-content">
+                            <a href="#">Page 1</a>
+                            <a href="#">Page 2</a>
+                            <a href="#">Page 3</a>
+                            <a href="#">Page 4</a>
+                        </div>
+                    </li>
+                    <li><a href="./public/CSS_practice.html">CSS Practice</a></li>
+                    <li><a href="#">My Portfolio</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="exercise">
+            <div class="exercise-title">
+                <h3>CSS Flag Exercise</h3> 
+            </div>
+            <hr>
+            <div class="flag">
+                <p>The Flag</p>
+                <div>
+                    <div>
+                        <p>of Laos</p>
+                    </div>
+                </div>
+            </div>
+            <h5>View CSS code in Inspect </h5>
+            <hr>
+            <div class="flag-2">
+                <div class="Top">
+
+                </div>
+                <div class="middle">
+                    <img src="../../assets/images/indianflagcenter.jpg" alt="" srcset="">
+                </div>
+                <div class="bottom">
+
+                </div>
+            </div>
+           
+            <h5>View CSS code in Inspect </h5>
+            <hr>
+        </div>
+    </body>
+</html>
